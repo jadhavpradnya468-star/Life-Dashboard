@@ -74,7 +74,7 @@ cd life-dashboard
 
 
 ## Live Demo:
-link:
+link:https://jadhavpradnya468-star.github.io/Life-Dashboard/
 
 
 ---
