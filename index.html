@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Life Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>⚡ Dashboard</h2>
+    <button onclick="showSection('tasks')">Tasks</button>
+    <button onclick="showSection('habits')">Habits</button>
+    <button onclick="showSection('notes')">Notes</button>
+    <button onclick="toggleTheme()">🌙 Theme</button>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+
+    <!-- Tasks -->
+    <div id="tasks" class="section">
+      <h2>✅ Tasks</h2>
+      <input id="taskInput" placeholder="Add task">
+      <button onclick="addTask()">Add</button>
+      <ul id="taskList"></ul>
+    </div>
+
+    <!-- Habits -->
+    <div id="habits" class="section hidden">
+      <h2>🔥 Habits</h2>
+      <input id="habitInput" placeholder="Add habit">
+      <button onclick="addHabit()">Add</button>
+      <ul id="habitList"></ul>
+    </div>
+
+    <!-- Notes -->
+    <div id="notes" class="section hidden">
+      <h2>📝 Notes</h2>
+      <textarea id="noteArea" placeholder="Write notes..."></textarea>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
